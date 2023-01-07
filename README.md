@@ -1,13 +1,13 @@
 # order-form
 
 #### This for is built by bootstrap, 
-#### is responsive and validate
+#### This form Is responsive and valid
 
 ## To run this code
 
-##### you shuold download or clone this repository and run localy
+##### You shuold download or clone this repository on your computer and run the code localy.
 
-## this is exemples on how the form looks on the different devices
+## This is an exemples on how the form will look on different devices
 
 ### Big screen
 ![Big screen](images/big.png)
@@ -20,6 +20,6 @@
 ### Medium screen
 ![mediaum screen](images/medium2.png)
 
-## to get responsiviness of this form i used bootstrap
-[Bootstrap](https://getbootstrap.com/)
+## To get responsiviness of this form i used bootstrap
+[Bootstrap](https://getbootstrap.com/),
 [Bootstrap navbar](https://getbootstrap.com/docs/4.0/components/navbar/)
