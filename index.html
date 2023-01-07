@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Computer Components Order Form</title>
+    <meta charset="UTF-8" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Com Tech</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Always available
+        </span>
+      </div>
+    </nav>
+  </header>
+    <div class="container">
+        <h2>Computer Components Order Form</h2>
+        <div class="card">
+        <form name="orderForm" onsubmit="return validateForm()" action="#" method="post" class="form-card">
+            <!-- Contact Info -->
+            <h3>Contact Information</h3>
+            
+            <div class="form-row ">
+                <div class="form-group col-md-6">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="inputName" name="customerName" placeholder="Full Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" name="customerEmail" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" name="customerAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity" name="customerCity" placeholder="City">
+                </div>
+                <div class="form-group col-md-4 mt-2">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control" name="customerState">
+                        <option selected>Choose...</option>
+                        <option>Alabama</option>
+                        <option>Alaska</option>
+                        <option>Arizona</option>
+                        <option>Arkansas</option>
+                        <option>California</option>
+                        <option>Colorado</option>
+                        <option>Connecticut</option>
+                        <option>Delaware</option>
+                        <option>Florida</option>
+                        <option>Georgia</option>
+                        <option>Hawaii</option>
+                        <option>Idaho</option>
+                        <option>Illinois</option>
+                        <option>Indiana</option>
+                        <option>Iowa</option>
+                        <option>Kansas</option>
+                        <option>Kentucky</option>
+                        <option>Louisiana</option>
+                        <option>Maine</option>
+                        <option>Maryland</option>
+                        <option>Massachusetts</option>
+                        <option>Michigan</option>
+                        <option>Minnesota</option>
+                        <option>Mississippi</option>
+                        <option>Missouri</option>
+                        <option>Montana</option>
+                        <option>Nebraska</option>
+                        <option>Nevada</option>
+                        <option>New Hampshire</option>
+                        <option>New Jersey</option>
+                        <option>New Mexico</option>
+                        <option>New York</option>
+                        <option>North Carolina</option>
+                        <option>North Dakota</option>
+                        <option>Ohio</option>
+                        <option>Oklahoma</option>
+                        <option>Oregon</option>
+                        <option>Pennsylvania</option>
+                        <option>Rhode Island</option>
+                        <option>South Carolina</option>
+                        <option>South Dakota</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Utah</option>
+                        <option>Vermont</option>
+                        <option>Virginia</option>
+                        <option>Washington</option>
+                        <option>West Virginia</option>
+                        <option>Wisconsin</option>
+                        <option>Wyoming</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip" name="customerZip" placeholder="Zip">
+                </div>
+            </div>
+            <!-- Order Info -->
+            <h3>Order Information</h3>
+            <div class="form-group">
+                <label for="inputProcessor">Processor</label>
+                <select id="inputProcessor" class="form-control" name="processor">
+                    <option selected>Choose...</option>
+                    <option>Intel Core i3-9100F</option>
+                    <option>Intel Core i5-9400F</option>
+                    <option>Intel Core i7-9700</option>
+                    <option>Intel Core i9-9900K</option>
+                    <option>AMD Ryzen 3 3200G</option>
+                    <option>AMD Ryzen 5 3600</option>
+                    <option>AMD Ryzen 7 3700X</option>
+                    <option>AMD Ryzen 9 3900X</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="inputMotherboard">Motherboard</label>
+                <select id="inputMotherboard" class="form-control" name="motherboard">
+                    <option selected>Choose...</option>
+                    <option>ASUS Prime H310M-E</option>
+                    <option>MSI B450M Pro-VDH Max</option>
+                    <option>Gigabyte B365M DS3H</option>
+                    <option>ASUS ROG STRIX X570-E</option>
+                    <option>ASRock B450M Steel Legend</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="inputMemory">Memory</label>
+                <select id="inputMemory" class="form-control" name="memory">
+                    <option selected>Choose...</option>
+                    <option>Corsair Vengeance 8GB DDR4-3000</option>
+                    <option>G.SKILL Ripjaws V 16GB DDR4-3600</option>
+                    <option>Crucial Ballistix Sport LT 16GB DDR4-3200</option>
+                    <option>G.SKILL Trident Z Neo 32GB DDR4-3600</option>
+                    <option>Corsair Vengeance RGB Pro 16GB DDR4-3200</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="inputStorage">Storage</label>
+                <select id="inputStorage" class="form-control" name="storage">
+                    <option selected>Choose...</option>
+                    <option>WD Blue 1TB 3.5" HDD</option>
+                    <option>Samsung 860 EVO 250GB 2.5" SSD</option>
+                    <option>Seagate BarraCuda 2TB 3.5" HDD</option>
+                    <option>WD Black SN750 1TB M.2 NVMe</option>
+                    <option>Intel 660p 1TB M.2 NVMe</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="inputGraphicsCard">Graphics Card</label>
+                <select id="inputGraphicsCard" class="form-control" name="graphicsCard">
+                    <option selected>Choose...</option>
+                    <option>MSI GTX 1650 Super</option>
+                    <option>ASUS Radeon RX 580 8GB</option>
+                    <option>Gigabyte RTX 2060 Super 8GB</option>
+                    <option>EVGA RTX 2070 Super 8GB</option>
+                    <option>ZOTAC RTX 2080 Ti 11GB</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+  </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
